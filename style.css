@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    height: 280px;
+    width: 200px;
+    border-top: rgb(255, 115, 0) solid 10px;
+    border-left: solid grey 1px;
+    border-right: solid grey 1px;
+    border-bottom: solid grey 2px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.137) 0px 0px 10px;
+}
+.wrapper:nth-child(even) .card{
+    border-top: rgb(49, 119, 250) solid 10px;
+}
+.cardUpper{
+    height: 130px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    background: url(https://picsum.photos/220/130) center center no-repeat;
+}
+
+.cardTitle{
+    background: rgba(255, 255, 255, 0.849);
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.cardTxt{
+    font-size: 0.56rem;
+    padding: 0 10px 10px 10px;
+    height: 73px;
+    font-family: serif;
+    overflow-y: hidden;
+    text-overflow: clip;
+    width: 90% ;
+}
+.overflow{
+    overflow: hidden;
+    height: 130px;
+}
+
+.cardIcon{
+    background: grey;
+    color: white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 25% 0 0;
+}
+.cardLower{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 119px;
+
+}
+.cardBtn{
+    width: 80px;
+    padding: 3px;
+    justify-self: end;
+    margin-left: 10px;
+    font-size: 0.7rem;
+}
+.flex{
+    display: flex;
+    margin-top: 5px;
+}
+.icon{
+    margin: 5px 15px 0 15px;
+    background: grey;
+    height: 15px;
+    width: 10px;
+    border-radius: 100%;
+    text-align: center;
+    flex: 15px 0 0;
+    color: white;
+    font-family: serif;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px;
+}
+.wrapper:nth-child(2):before{
+    content: 'FEATURED!';
+    background: rgba(255, 210, 112, 0.945);
+    transform: rotate(45deg)translateY(-23px)translateX(-15px);
+    width: 220px;
+    text-align: end;
+    padding: 5px 20px 5px 0;
+    overflow: hidden;
+    position:absolute;
+    font-size: 0.7rem;
+    
+   
+}
+.wrapper:nth-child(3):before{
+    content: 'FEATURED!';
+    background: rgba(255, 210, 112, 0.945);
+    transform: rotate(45deg)translateY(-23px)translateX(-15px);
+    width: 220px;
+    text-align: end;
+    padding: 5px 20px 5px 0;
+    overflow: hidden;
+    position:absolute;
+    font-size: 0.7rem;
+    
+   
+}
+.wrapper{
+    overflow: hidden;
+    position: relative;
+}
